@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<style>
+.header {
+ background-color: #f8f9fa;
+ padding: 25px;
+ text-align: center;
+ font-size: 35px;
+ color: #6c757d;
+
+}
+
+.main {
+ padding: 0px;
+ text-align: center;
+}
+
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ transition: 0.3s;
+ width: 25%;
+ padding: 25px;
+ margin: 10px;
+ text-align: center;
+ background-color: #f1f1f1;
+ display: inline-block;
+}
+
+.card:hover {
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+ padding: 2px 16px;
+}
+
+.button {
+ border: none;
+ color: white;
+ padding: 10px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+
+.button1 {background-color: #dfe5df;} /* Green */
+.button2 {background-color: #e2ebed;} /* Blue */
+.button3 {background-color: #e8e0e0;} /* Red */
+
+.foto{
+    width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-main{
+    background-color:#3F3F3F ;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.tbox-search{
+    float: center;
+    background: none;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-size: 16px;
+    width: 0;
+    transition: 1s;
+}
+.btn-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 16px;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.search-main:hover > .tbox-search{
+    width: 200px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+ <img class="foto" src="google.jpg" alt="">
+</div>
+
+<div class="search-main">
+    <input type="text" class="tbox-search">
+    <a class="btn-search">
+        <i class="fa fa-search"></i>
+    </a>
+   </div>
+
+<div class="main">
+ <div class="card">
+    <h3>Card 1</h3>
+    <p>This is a card with a button.</p>
+    <div class="container">
+      <button class="button button1">Click me</button>
+    </div>
+ </div>
+  
+ <div class="card">
+    <h3>Card 2</h3>
+    <p>This is another card with a button.</p>
+    <div class="container">
+      <button class="button button2">Click me</button>
+    </div>
+ </div>
+  
+ <div class="card">
+    <h3>Card 3</h3>
+    <p>This is the last card with a button.</p>
+    <div class="container">
+      <button class="button button3">Click me</button>
+    </div>
+ </div>
+</div>
+
+</body>
+</html>
